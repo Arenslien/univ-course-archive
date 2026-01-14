@@ -1,9 +1,9 @@
-# __Univ__Course-Archive
+### [Univ] Course-Archive
 명지대학교 학부 과정 중 수행한 전공 과목 실습 및 소스 코드 아카이브(2020 - 2023)
 
 ---
 
-## 🎓 Coursework Overview
+### 🎓 Coursework Overview
 
 | 학기 | 과목명 | 핵심 기술 | 비고 |
 |:---:|:---|:---:|:---|
