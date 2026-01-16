@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block style %}
+<link type="text/css" rel="stylesheet" href="../css/error.css">
+{% endblock %}
+
+{% block main %}
+  <h1>ERROR: {{message}}</h1><br>
+  <h2>STATUS: {{error.status}}</h2><br>
+  <pre>STACK: {{error.stack}}</pre>
+{% endblock %}

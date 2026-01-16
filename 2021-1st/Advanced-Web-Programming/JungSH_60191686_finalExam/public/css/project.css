@@ -1,0 +1,162 @@
+/* project css 공통 */
+section {
+    padding: 30px;
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 50px;
+}
+
+/* project - index.html에 대한 css */
+button#add_project {
+    position: fixed;
+    width: 400px;
+    height: 100px;
+    border: none;
+    border-radius: 20px;
+    font-size: 50px;
+    transition: all ease 200ms 100ms;
+    margin: 50px 30px;
+    right: 0px;
+    bottom: -10px;
+}
+button.add:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* project box에 대한 css */
+
+div.gallery {
+    position: relative;
+}
+
+div.project{
+    width:600px;
+    height:300px;
+    margin: 30px 0px;
+}
+div.card {
+    position: absolute;
+    height:inherit;
+    width:inherit;
+    color:#FFF;
+    transform-style: preserve-3d;
+    transition:all 0.5s ease;
+}
+div.front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+div.back {
+    position: absolute;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+    left: 300px;
+}
+div.card:hover {
+    transform: rotateY(180deg);
+}
+div.card, img.main{
+    background-color: black;
+    border-radius: 20px;
+}
+
+img.main {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+h3.title {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+a.git {
+    transition: all 0.5s ease;
+}
+a.git:hover {
+    color: green;
+}
+
+form.edit, form.remove {
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+}
+form.edit {
+    left: 400px;
+}
+form.remove {
+    left: 480px;
+}
+button.edit, button.remove {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+img.edit, img.remove {
+    width: 50px;
+    height: 50px;
+}
+button.edit:hover {
+    background-color: green;
+}
+button.remove:hover {
+    background-color: orangered;
+}
+input.id {
+    display: none;
+}
+
+/* addProject.html에 대한 css */
+form.addProject, form.editProject {
+    background: white;
+    margin: 0px auto;
+    margin-top: 30px;
+    width: 1045px;
+    border: none;
+    box-shadow: 0px 0px 15px #000000;
+    padding: 30px;
+}
+
+p {
+    width: max-content;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+input.basic {
+    width: 1020px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+input[type='text'], input[type='url'] {
+    padding-left: 20px;
+    border: #333 solid;
+    border-radius: 5px;
+    background: #dddddd93;
+}
+input[type='file'] {
+    display: block;
+    color: black;
+}
+
+button#addProject, button#editProject {
+    width: 1044px;
+    height: 35px;
+    margin: 0px auto 20px auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px gray;
+    background: #222;
+    color: white;
+}
